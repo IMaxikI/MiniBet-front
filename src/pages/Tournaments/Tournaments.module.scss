@@ -1,0 +1,86 @@
+.accHeader {
+  button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background: var(--color-info);
+    color: #fff;
+    padding: 10px 10px;
+    font-size: 19px;
+    border: none;
+    text-align: left;
+  }
+
+  button[data-state='open'] svg {
+    transform: rotate(180deg);
+  }
+
+  button:hover {
+    cursor: pointer;
+    background: #1a3c50;
+  }
+}
+
+.accItem {
+  margin-bottom: 15px;
+}
+
+.accContent {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.checkBoxWrapper {
+  display: flex;
+  align-items: center;
+  padding: 18px 15px;
+  border: 1px solid lightgray;
+
+  &:hover {
+    background: #f2f2f2;
+    cursor: pointer;
+  }
+
+  input {
+    margin: 0 5px;
+    width: 18px;
+    height: 18px;
+  }
+}
+
+.controlBtns {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+
+  button {
+    margin: 0 8px;
+    border: none;
+    background: none;
+    color: #ffffff;
+    font-size: 18px;
+    padding: 12px 25px;
+    border-radius: 5px;
+  }
+
+  button:hover {
+    cursor: pointer;
+  }
+
+  .retiredBtn {
+    background: var(--color-info);
+  }
+
+  .makeBtn {
+    background: var(--color-success);
+  }
+
+  .retiredBtn:hover {
+    background: #1a3c50;
+  }
+
+  .makeBtn:hover {
+    background: #04a133;
+  }
+}

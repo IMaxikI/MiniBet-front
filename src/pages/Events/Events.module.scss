@@ -1,0 +1,87 @@
+.accHeader {
+  button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background: var(--color-info);
+    color: #fff;
+    padding: 10px 10px;
+    font-size: 19px;
+    border: none;
+    text-align: left;
+  }
+
+  button[data-state='open'] svg {
+    transform: rotate(180deg);
+  }
+
+  button:hover {
+    cursor: pointer;
+    background: #1a3c50;
+  }
+}
+
+.accItem {
+  margin-bottom: 15px;
+}
+
+.tableEvents {
+  width: 100%;
+  border: none;
+  border-collapse: collapse;
+
+  td:nth-child(1) {
+    width: 80px;
+    text-align: center;
+  }
+
+  th:nth-child(2) {
+    text-align: left;
+  }
+
+  .columnOdds {
+    text-align: center;
+    width: 60px;
+  }
+
+  thead {
+    background: var(--color-success);
+    color: #fff;
+
+    th {
+      padding: 5px 0;
+    }
+  }
+
+  tbody {
+    border: 1px solid lightgray;
+
+    tr {
+      border: 1px solid lightgray;
+    }
+
+    td {
+      padding: 5px 0;
+    }
+
+    tr:hover {
+      background: #e8faee;
+    }
+  }
+}
+
+.outcomeBtn {
+  background: none;
+  border: none;
+  font-size: 17px;
+  padding: 8px 0;
+  width: 55px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.outcomeBtn:hover, .selectedOutcomeBtn {
+  color: #ffffff;
+  background: var(--color-info);
+}
